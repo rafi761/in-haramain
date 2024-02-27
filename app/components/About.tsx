@@ -1,0 +1,11 @@
+import AboutContent from "./AboutContent"
+
+const About = () => {
+    return (
+        <section className="w-full h-[80vh] bg-[#D7E4C0] px-20 py-16 flex flex-row items-center max-lg:flex-col max-lg:gap-y-8 max-lg:h-auto max-lg:px-8">
+            <AboutContent />
+        </section>
+    )
+}
+
+export default About

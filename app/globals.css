@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Untuk Firefox */
+html {
+  scrollbar-width: none;
+}
