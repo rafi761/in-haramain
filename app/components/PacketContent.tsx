@@ -33,32 +33,32 @@ const PacketContent = () => {
                         <h3>Harga Sudah Termasuk :</h3>
                         <div className="grid grid-cols-2">
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Visa Umroh</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Visa Umroh</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Tiket Ekonomi Class PP</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Tiket Ekonomi Class PP</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Hotel</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Hotel</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Makan</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Makan</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Asuransi</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Asuransi</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Perlengkapan Umroh</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Perlengkapan Umroh</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">dll</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">dll</p>
                             </div>
                         </div>
                     </div>
@@ -82,32 +82,32 @@ const PacketContent = () => {
                         <h3>Harga Sudah Termasuk :</h3>
                         <div className="grid grid-cols-2">
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Visa Umroh</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Visa Umroh</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Tiket Ekonomi Class PP</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Tiket Ekonomi Class PP</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Hotel</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Hotel</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">TL & Muthawif</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">TL & Muthawif</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Asuransi</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Asuransi</p>
                             </div>
                             <div className="flex items-center gap-x-1 ml-[-40px]">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">Perlengkapan Umroh</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Perlengkapan Umroh</p>
                             </div>
                             <div className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                                <p className="text-black text-base">dll</p>
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">dll</p>
                             </div>
                         </div>
                     </div>
