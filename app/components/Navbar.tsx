@@ -20,7 +20,7 @@ export default function AppBar() {
     };
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#D7E4C0]">
+        <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#EEEDEB]">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -35,7 +35,7 @@ export default function AppBar() {
                             height={60}
                             className="object-contain"
                         />
-                        <p className="font-bold text-black">IN-HARAMAIN</p>
+                        <p className="font-bold text-black max-md:text-base">IN-HARAMAIN</p>
                     </NavbarBrand>
                 </Link>
             </NavbarContent>
@@ -149,7 +149,7 @@ export default function AppBar() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="flex">
-                    <Link href="#" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white">Daftar Sekarang</Link>
+                    <Link href="#" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white">Daftar</Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarMenu>
