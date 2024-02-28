@@ -40,3 +40,8 @@ body {
 html {
   scrollbar-width: none;
 }
+
+input[type="date"]::placeholder:not(:placeholder-shown) {
+  /* Mengatur warna placeholder menjadi transparan */
+  color: transparent;
+}

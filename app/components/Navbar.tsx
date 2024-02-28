@@ -19,12 +19,21 @@ export default function AppBar() {
         chevron: <ChevronDown fill="currentColor" size={16} />,
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(prevState => !prevState); // Toggle state
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false); // Close menu
+    };
+
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#EEEDEB]">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="lg:hidden text-black"
+                    onClick={toggleMenu}
                 />
                 <Link href="/">
                     <NavbarBrand>
@@ -152,7 +161,7 @@ export default function AppBar() {
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarMenu>
+            <NavbarMenu className="w-fit">
                 <Dropdown>
                     <NavbarItem>
                         <DropdownTrigger>
@@ -255,7 +264,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#footer">
+                    <Link className="text-black font-semibold" href="#footer" onClick={closeMenu}>
                         HUBUNGI KAMI
                     </Link>
                 </NavbarItem>
