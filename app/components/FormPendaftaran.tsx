@@ -22,7 +22,7 @@ const FormPendaftaran = () => {
                 <Input size="md" type="number" name="No Telp / HP" label="No Telp / HP" labelPlacement="outside" />
                 <Input size="md" type="text" name="Pekerjaan" label="Pekerjaan" labelPlacement="outside" />
                 <Input size="md" type="text" name="Alamat" label="Alamat" labelPlacement="outside" />
-                <Input size="md" type="text" name="Info" label="Dapat info ini dari mana ?" labelPlacement="outside" />
+                <Input size="md" type="text" name="Info" label="Dapat info website ini dari mana ?" labelPlacement="outside" />
             </div>
 
             <Input

@@ -151,6 +151,7 @@ export default function AppBar() {
                     <Link href="/pendaftaran" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white">Daftar</Link>
                 </NavbarItem>
             </NavbarContent>
+
             <NavbarMenu>
                 <Dropdown>
                     <NavbarItem>

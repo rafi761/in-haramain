@@ -76,7 +76,7 @@ const PacketContent = () => {
                 <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
                     <p className="text-tiny uppercase font-bold">Program 9 Hari</p>
                     <small className="text-default-500">Agustus - September 2024</small>
-                    <h4 className="font-bold text-large">UMROH REGULER 12 HARI <span className="text-lg text-black font-normal">/ Rp. 30.000.000</span></h4>
+                    <h4 className="font-bold text-large">UMROH REGULER 12 HARI <span className="text-lg text-black font-normal">/ Rp. 30.900.000</span></h4>
 
                     <div className="flex flex-col gap-y-4 mt-3">
                         <h3>Harga Sudah Termasuk :</h3>
