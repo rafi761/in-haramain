@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <footer className="w-full h-auto bg-[#F5F7F8] px-24 py-16 flex flex-col gap-y-6 max-lg:px-8">
+        <footer className="w-full h-auto bg-[#F5F7F8] px-24 py-16 flex flex-col gap-y-6 max-lg:px-8" id="footer">
             <div className="flex justify-between items-start gap-x-20 max-lg:flex-col gap-y-5">
                 <div className="flex flex-col gap-y-4">
                     <div className="flex gap-x-3 items-center">
@@ -28,6 +28,14 @@ const Footer = () => {
                         <Link href="">
                             <FaTwitter size={28} className="text-black" />
                         </Link>
+                    </div>
+                    <div className="flex flex-col gap-y-5">
+                        <h2 className="text-2xl text-[#EAC100]">HUBUNGI KAMI</h2>
+                        <ul className="flex flex-col gap-y-2 text-black">
+                            <li>Alamat : Jl. Untung Suropati No. 86, Pasar Kliwon</li>
+                            <li>Whatsapp : 085292984909</li>
+                            <li>E-mail : ihm28.1.24@gmail.com</li>
+                        </ul>
                     </div>
                 </div>
 

@@ -64,43 +64,44 @@ export default function AppBar() {
                     >
                         <DropdownItem
                             key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
-                            Umroh VVIP
+                            <Link href="/">Umroh VVIP</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohvip"
                             className="text-black"
                         >
-                            Umroh VIP
+                            <Link href="/">Umroh VIP</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohreguler9hari"
                             className="text-black"
                         >
-                            Umroh Reguler
+                            <Link href="#packet">Umroh Reguler 9 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohreguler12hari"
                             className="text-black"
                         >
-                            Umroh Promo
+                            <Link href="#packet">Umroh Reguler 12 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohpromo"
                             className="text-black"
                         >
-                            Umroh Super Promo
+                            <Link href="/">Umroh Promo</Link>
+                        </DropdownItem>
+                        <DropdownItem
+                            key="umrohsuperpromo"
+                            className="text-black"
+                        >
+                            <Link href="/">Umroh Super Promo</Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#">
+                    <Link className="text-black font-semibold" href="#about">
                         TENTANG KAMI
                     </Link>
                 </NavbarItem>
@@ -127,14 +128,12 @@ export default function AppBar() {
                     >
                         <DropdownItem
                             key="artikel"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
                             ARTIKEL
                         </DropdownItem>
                         <DropdownItem
                             key="video"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
                             VIDEO
@@ -142,14 +141,14 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#">
+                    <Link className="text-black font-semibold" href="#footer">
                         HUBUNGI KAMI
                     </Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="flex">
-                    <Link href="#" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white">Daftar</Link>
+                    <Link href="/pendaftaran" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white">Daftar</Link>
                 </NavbarItem>
             </NavbarContent>
             <NavbarMenu>
@@ -176,43 +175,44 @@ export default function AppBar() {
                     >
                         <DropdownItem
                             key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
-                            Umroh VVIP
+                            <Link href="/">Umroh VVIP</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohvip"
                             className="text-black"
                         >
-                            Umroh VIP
+                            <Link href="/">Umroh VIP</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohreguler9hari"
                             className="text-black"
                         >
-                            Umroh Reguler
+                            <Link href="#packet">Umroh Reguler 9 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohreguler12hari"
                             className="text-black"
                         >
-                            Umroh Promo
+                            <Link href="#packet">Umroh Reguler 12 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
-                            key="umrohvvip"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="umrohpromo"
                             className="text-black"
                         >
-                            Umroh Super Promo
+                            <Link href="/">Umroh Promo</Link>
+                        </DropdownItem>
+                        <DropdownItem
+                            key="umrohpromo"
+                            className="text-black"
+                        >
+                            <Link href="/">Umroh Super Promo</Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#">
+                    <Link className="text-black font-semibold" href="#about">
                         TENTANG KAMI
                     </Link>
                 </NavbarItem>
@@ -254,7 +254,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#">
+                    <Link className="text-black font-semibold" href="#footer">
                         HUBUNGI KAMI
                     </Link>
                 </NavbarItem>

@@ -23,7 +23,7 @@ const AboutContent = () => {
                 <div className="w-full grid grid-cols-2 gap-y-3 max-lg:grid-cols-1">
                     <div className="flex items-center gap-x-3">
                         <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                        <p className="text-black text-base">Agen Travel Terpercaya</p>
+                        <p className="text-black text-base">Memiliki Ijin Resmi</p>
                     </div>
                     <div className="flex items-center gap-x-3">
                         <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
@@ -31,7 +31,7 @@ const AboutContent = () => {
                     </div>
                     <div className="flex items-center gap-x-3">
                         <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                        <p className="text-black text-base">Agen Travel Termurah</p>
+                        <p className="text-black text-base">Mutowif dan TL Kompeten</p>
                     </div>
                     <div className="flex items-center gap-x-3">
                         <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />

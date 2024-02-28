@@ -22,8 +22,15 @@ const FormPendaftaran = () => {
                 <Input size="md" type="number" name="No Telp / HP" label="No Telp / HP" labelPlacement="outside" />
                 <Input size="md" type="text" name="Pekerjaan" label="Pekerjaan" labelPlacement="outside" />
                 <Input size="md" type="text" name="Alamat" label="Alamat" labelPlacement="outside" />
+                <Input size="md" type="text" name="Info" label="Dapat info ini dari mana ?" labelPlacement="outside" />
             </div>
 
+            <Input
+                isReadOnly
+                type="text"
+                name="KELUARGA YANG DAPAT DIHUBUNGI"
+                className="max-w-xs hidden "
+            />
             <h1 className="text-2xl text-black mt-5">KELUARGA YANG DAPAT DI HUBUNGI</h1>
 
             <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1">
