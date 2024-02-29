@@ -110,7 +110,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#about">
+                    <Link className="text-black font-semibold" href="/about">
                         TENTANG KAMI
                     </Link>
                 </NavbarItem>
@@ -222,7 +222,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#about" onClick={() => toggleMenu()}>
+                    <Link className="text-black font-semibold" href="/about" onClick={() => toggleMenu()}>
                         TENTANG KAMI
                     </Link>
                 </NavbarItem>
