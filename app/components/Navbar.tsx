@@ -8,6 +8,7 @@ import Link from "next/link";
 
 export default function AppBar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [mobileMenu, setMobileMenu] = React.useState("Open Menu")
 
     const menuItems = [
         "Paket Umrah",
@@ -28,12 +29,11 @@ export default function AppBar() {
     };
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-[#EEEDEB]">
+        <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="bg-[#EEEDEB]">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="lg:hidden text-black"
-                    onClick={toggleMenu}
                 />
                 <Link href="/">
                     <NavbarBrand>
@@ -87,13 +87,13 @@ export default function AppBar() {
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="#packet">Umroh Reguler 9 Hari</Link>
+                            <Link href="/paket1">Umroh Reguler 9 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohreguler12hari"
                             className="text-black"
                         >
-                            <Link href="#packet">Umroh Reguler 12 Hari</Link>
+                            <Link href="/paket2">Umroh Reguler 12 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohpromo"
@@ -150,7 +150,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#footer">
+                    <Link className="text-black font-semibold" href="/contact">
                         HUBUNGI KAMI
                     </Link>
                 </NavbarItem>
@@ -187,42 +187,42 @@ export default function AppBar() {
                             key="umrohvvip"
                             className="text-black"
                         >
-                            <Link href="/">Umroh VVIP</Link>
+                            <Link href="/" onClick={() => toggleMenu()}>Umroh VVIP</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohvip"
                             className="text-black"
                         >
-                            <Link href="/">Umroh VIP</Link>
+                            <Link href="/" onClick={() => toggleMenu()}>Umroh VIP</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="#packet">Umroh Reguler 9 Hari</Link>
+                            <Link href="/paket1" onClick={() => toggleMenu()}>Umroh Reguler 9 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohreguler12hari"
                             className="text-black"
                         >
-                            <Link href="#packet">Umroh Reguler 12 Hari</Link>
+                            <Link href="/paket2" onClick={() => toggleMenu()}>Umroh Reguler 12 Hari</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohpromo"
                             className="text-black"
                         >
-                            <Link href="/">Umroh Promo</Link>
+                            <Link href="/" onClick={() => toggleMenu()}>Umroh Promo</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohpromo"
                             className="text-black"
                         >
-                            <Link href="/">Umroh Super Promo</Link>
+                            <Link href="/" onClick={() => toggleMenu()}>Umroh Super Promo</Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#about">
+                    <Link className="text-black font-semibold" href="#about" onClick={() => toggleMenu()}>
                         TENTANG KAMI
                     </Link>
                 </NavbarItem>
@@ -264,7 +264,7 @@ export default function AppBar() {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link className="text-black font-semibold" href="#footer" onClick={closeMenu}>
+                    <Link className="text-black font-semibold" href="/contact" onClick={() => toggleMenu()}>
                         HUBUNGI KAMI
                     </Link>
                 </NavbarItem>
