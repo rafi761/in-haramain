@@ -10,22 +10,12 @@ export default function AppBar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [mobileMenu, setMobileMenu] = React.useState("Open Menu")
 
-    const menuItems = [
-        "Paket Umrah",
-        "Tentang Kami",
-        "Hubungi Kami"
-    ];
-
     const icons = {
         chevron: <ChevronDown fill="currentColor" size={16} />,
     };
 
     const toggleMenu = () => {
         setIsMenuOpen(prevState => !prevState); // Toggle state
-    };
-
-    const closeMenu = () => {
-        setIsMenuOpen(false); // Close menu
     };
 
     return (
@@ -42,9 +32,9 @@ export default function AppBar() {
                             alt="In-haramain"
                             width={60}
                             height={60}
-                            className="object-contain max-sm:w-[40px] max-sm:h-[40px]"
+                            className="object-contain max-xs:w-[40px] max-xs:h-[40px]"
                         />
-                        <p className="font-bold text-black text-xs sm:text-base">IN-HARAMAIN TOUR</p>
+                        <p className="font-bold text-black text-xs xs:text-base">IN-HARAMAIN TOUR</p>
                     </NavbarBrand>
                 </Link>
             </NavbarContent>

@@ -13,9 +13,9 @@ const Footer = () => {
                             alt="Footer Logo"
                             width={100}
                             height={100}
-                            className="object-contain"
+                            className="object-contain max-xs:w-[70px] max-xs:h-[70px]"
                         />
-                        <p className="text-4xl text-[#EAC100] max-sm:text-3xl">IN-HARAMAIN TOUR</p>
+                        <p className=" text-[#EAC100] text-xl md:text-4xl">IN-HARAMAIN TOUR</p>
                     </div>
                     <p className="text-base text-black">Dengan Langkah-langkah yang Dipandu oleh Keyakinan yang Mendalam dan Rasa Hormat yang Tak Tergoyahkan, Kami Mengajak Anda untuk Meresapi Setiap Detil dari Kehadiran Ilahi yang Maha Kuasa di Tanah Suci Haramain</p>
                     <div className="flex items-center gap-x-8">
@@ -30,17 +30,17 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="flex flex-col gap-y-5">
-                        <h2 className="text-2xl text-[#EAC100]">HUBUNGI KAMI</h2>
+                        <h2 className="text-[#EAC100] text-xl md:text-2xl">HUBUNGI KAMI</h2>
                         <ul className="flex flex-col gap-y-2 text-black">
                             <li>Alamat : Jl. Untung Suropati No. 60, Pasar Kliwon, Solo, JawaTengah</li>
-                            <li>Whatsapp : 085292984909</li>
                             <li>E-mail : ihm28.1.24@gmail.com</li>
+                            <li>Whatsapp : 085292984909</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-y-5">
-                    <h2 className="text-2xl text-[#EAC100]">LAYANAN</h2>
+                    <h2 className=" text-[#EAC100] text-xl md:text-2xl">LAYANAN</h2>
                     <ul className="flex flex-col gap-y-2 text-black">
                         <li>Paket Umroh</li>
                         <li>Panduan Umroh</li>
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-5">
-                    <h2 className="text-2xl text-[#EAC100]">SUPPORT</h2>
+                    <h2 className="text-[#EAC100] text-xl md:text-2xl">SUPPORT</h2>
                     <ul className="flex flex-col gap-y-2 text-black">
                         <li>Bantuan</li>
                         <li>Akun Saya</li>
@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-5">
-                    <h2 className="text-2xl text-[#EAC100]">PERUSAHAAN</h2>
+                    <h2 className="text-[#EAC100] text-xl md:text-2xl">PERUSAHAAN</h2>
                     <ul className="flex flex-col gap-y-2 text-black">
                         <li>Tentang Kami</li>
                         <li>Artikel</li>
