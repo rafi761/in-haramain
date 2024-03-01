@@ -147,7 +147,7 @@ export default function AppBar() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="flex">
-                    <Link href="/pendaftaran" className="px-2 py-1 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Daftar</Link>
+                    <Link href="/pendaftaran" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Daftar</Link>
                 </NavbarItem>
             </NavbarContent>
 
