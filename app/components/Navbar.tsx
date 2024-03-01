@@ -20,7 +20,7 @@ export default function AppBar() {
 
     return (
         <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className="bg-[#EEEDEB]">
-            <NavbarContent className="mr-14">
+            <NavbarContent className="lg:mr-14">
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="lg:hidden text-black"
@@ -32,7 +32,7 @@ export default function AppBar() {
                             alt="In-haramain"
                             width={60}
                             height={60}
-                            className="object-contain max-xs:w-[40px] max-xs:h-[40px]"
+                            className="object-contain max-xs:w-[50px] max-xs:h-[50px]"
                         />
                         <p className="font-bold text-black text-xs xs:text-base">IN-HARAMAIN TOUR</p>
                     </NavbarBrand>
@@ -239,14 +239,12 @@ export default function AppBar() {
                     >
                         <DropdownItem
                             key="artikel"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
                             ARTIKEL
                         </DropdownItem>
                         <DropdownItem
                             key="video"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
                             className="text-black"
                         >
                             VIDEO

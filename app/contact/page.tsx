@@ -4,7 +4,7 @@ const page = () => {
     return (
         <section className="w-full h-fit bg-[#EEEDEB] px-36 py-20 grid grid-cols-2 max-lg:grid-cols-1 max-lg:px-8 max-lg:gap-y-5">
             <div className="flex flex-col gap-y-5 justify-center">
-                <h1 className="text-black text-4xl font-semibold max-md:text-2xl">Masukkan Dari Anda <br /> Sangat Berarti Bagi Kami</h1>
+                <h1 className="text-black text-4xl font-semibold max-md:text-2xl">Masukan Dari Anda <br /> Sangat Berarti Bagi Kami</h1>
                 <p className="text-black text-base">Kami disini hadir untuk membantu segala pertanyaan atau masukan yang ingin anda sampaikan kepada kami</p>
                 <p className="text-black text-base">Contact person kami tersedia selama 24 jam untuk membantu menyelesaikan pertanyaan atau masukkan-masukkan yang anda berikan</p>
 

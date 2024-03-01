@@ -31,8 +31,6 @@ const page = () => {
                                 </div>
                             </div>
 
-                            <h2 className="text-black text-lg font-semibold mt-4">Deskripsi :</h2>
-
                             <div className="flex flex-col gap-y-3">
                                 <p className="text-black text-base">Paket umroh 9 hari yang ditawarkan oleh Travel Umroh In-Haramain menjanjikan sebuah pengalaman spiritual yang mendalam dan menyeluruh. Keunggulan utama dari paket ini terletak pada efisiensi waktu tanpa mengurangi esensi ibadah umroh itu sendiri. Dengan durasi yang relatif singkat, jemaah dapat menikmati perjalanan rohani yang intens dan fokus, mengunjungi tempat-tempat suci di Mekkah dan Madinah. Paket ini dirancang khusus untuk memenuhi kebutuhan jemaah yang ingin menjalankan ibadah umroh dengan waktu yang terbatas, namun tetap menginginkan pengalaman yang berkualitas dan berkesan.</p>
                                 <p className="text-black text-base">Keistimewaan lain dari paket umroh 9 hari ini adalah penyelenggaraannya yang sangat terorganisir dan perhatian terhadap detail dari pihak travel. Dari akomodasi, transportasi, hingga makanan, semua telah dipilih dengan seksama untuk memastikan kenyamanan maksimal bagi jemaah selama perjalanan. Penggunaan hotel yang dekat dengan Masjidil Haram di Mekkah dan Masjid Nabawi di Madinah memungkinkan jemaah untuk lebih sering melakukan ibadah di dua masjid suci tersebut dengan lebih mudah dan nyaman. Selain itu, pemandu spiritual yang berpengalaman dan berwawasan luas turut mendampingi, memberikan bimbingan dan penjelasan tentang manasik umroh serta sejarah dan keistimewaan tempat-tempat yang dikunjungi, sehingga menambah kedalaman makna perjalanan.</p>
