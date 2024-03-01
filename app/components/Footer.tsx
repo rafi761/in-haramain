@@ -15,7 +15,7 @@ const Footer = () => {
                             height={100}
                             className="object-contain"
                         />
-                        <p className="text-4xl text-[#EAC100] max-sm:text-3xl">IN-HARAMAIN</p>
+                        <p className="text-4xl text-[#EAC100] max-sm:text-3xl">IN-HARAMAIN TOUR</p>
                     </div>
                     <p className="text-base text-black">Dengan Langkah-langkah yang Dipandu oleh Keyakinan yang Mendalam dan Rasa Hormat yang Tak Tergoyahkan, Kami Mengajak Anda untuk Meresapi Setiap Detil dari Kehadiran Ilahi yang Maha Kuasa di Tanah Suci Haramain</p>
                     <div className="flex items-center gap-x-8">
@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="flex flex-col gap-y-5">
                         <h2 className="text-2xl text-[#EAC100]">HUBUNGI KAMI</h2>
                         <ul className="flex flex-col gap-y-2 text-black">
-                            <li>Alamat : Jl. Untung Suropati No. 86, Pasar Kliwon</li>
+                            <li>Alamat : Jl. Untung Suropati No. 60, Pasar Kliwon, Solo, JawaTengah</li>
                             <li>Whatsapp : 085292984909</li>
                             <li>E-mail : ihm28.1.24@gmail.com</li>
                         </ul>

@@ -62,7 +62,7 @@ const FormPendaftaran = () => {
                 <Input size="lg" type="number" name="No Telp / HP" label="No Telp / HP" labelPlacement="outside" />
                 <Input size="lg" type="text" name="Pekerjaan" label="Pekerjaan" labelPlacement="outside" />
                 <Input size="lg" type="text" name="Alamat" label="Alamat" labelPlacement="outside" />
-                <Input size="lg" type="text" name="Info" label="Darimana dapat informasi website ini ?" labelPlacement="outside" />
+                <Input size="lg" type="text" name="Info" label="Darimana dapat informasi tentang In-Haramain Tour ini ?" labelPlacement="outside" />
             </div>
 
             <Input

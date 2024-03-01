@@ -69,12 +69,12 @@ const PacketContent = () => {
                     <Image
                         alt="Card background"
                         className="object-cover rounded-xl"
-                        src="/images/paketvip.jpg"
+                        src="/images/paketreguler12.jpg"
                         width={360}
                     />
                 </CardHeader>
                 <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
-                    <p className="text-tiny uppercase font-bold">Program 9 Hari</p>
+                    <p className="text-tiny uppercase font-bold">Program 12 Hari</p>
                     <small className="text-default-500">Agustus - September 2024</small>
                     <h4 className="font-bold text-large">UMROH REGULER 12 HARI <span className="text-lg text-black font-normal">/ Rp. 30.900.000</span></h4>
 
