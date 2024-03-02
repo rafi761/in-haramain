@@ -6,7 +6,7 @@ const page = () => {
             <div className="flex flex-col gap-y-5 justify-center">
                 <h1 className="text-black text-4xl font-semibold max-md:text-2xl">Masukan Dari Anda <br /> Sangat Berarti Bagi Kami</h1>
                 <p className="text-black text-base">Kami disini hadir untuk membantu segala pertanyaan atau masukan yang ingin anda sampaikan kepada kami</p>
-                <p className="text-black text-base">Contact person kami tersedia selama 24 jam untuk membantu menyelesaikan pertanyaan atau masukkan-masukkan yang anda berikan</p>
+                <p className="text-black text-base">Contact person kami siap membantu menyelesaikan pertanyaan atau masukkan-masukkan yang anda berikan</p>
 
                 <div className="mt-10 flex flex-col gap-y-4">
                     <p className="text-black text-lg"><span className="font-semibold">Alamat Kantor</span> : Jl. Untung Suropati No. 60, PasarKliwon - Solo - JawaTengah</p>

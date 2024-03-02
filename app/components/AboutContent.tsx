@@ -27,10 +27,6 @@ const AboutContent = () => {
                     </div>
                     <div className="flex items-center gap-x-3">
                         <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
-                        <p className="text-black text-base">Berpengalaman 10 Tahun Lebih</p>
-                    </div>
-                    <div className="flex items-center gap-x-3">
-                        <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457]" />
                         <p className="text-black text-base">Mutowif dan TL Kompeten</p>
                     </div>
                     <div className="flex items-center gap-x-3">
