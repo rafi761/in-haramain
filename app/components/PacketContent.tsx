@@ -172,6 +172,58 @@ const PacketContent = () => {
                     </div>
                 </CardBody>
             </Card>
+            <Card className="py-4 w-fit mx-auto" data-aos="zoom-in-up">
+                <CardHeader className="overflow-visible py-2">
+                    <Image
+                        alt="Card background"
+                        className="object-cover rounded-xl"
+                        src="/images/umrohturki.jpg"
+                        width={360}
+                    />
+                </CardHeader>
+                <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
+                    <p className="text-tiny uppercase font-bold">Program 9 Hari</p>
+                    <small className="text-default-500">Agustus - September 2024</small>
+                    <h4 className="font-bold text-large">UMROH SUPER PROMO <span className="text-lg text-black font-normal">/ Rp. 22.750.000</span></h4>
+
+                    <div className="flex flex-col gap-y-4 mt-3">
+                        <h3>Harga Sudah Termasuk :</h3>
+                        <div className="grid grid-cols-2">
+                            <div className="flex items-center gap-x-1">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Visa Umroh</p>
+                            </div>
+                            <div className="flex items-center gap-x-1 ml-[-40px]">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Tiket Ekonomi Class PP</p>
+                            </div>
+                            <div className="flex items-center gap-x-1">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Hotel</p>
+                            </div>
+                            <div className="flex items-center gap-x-1 ml-[-40px]">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Bus AC</p>
+                            </div>
+                            <div className="flex items-center gap-x-1">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Mottowif</p>
+                            </div>
+                            <div className="flex items-center gap-x-1 ml-[-40px]">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">Tour Leader</p>
+                            </div>
+                            <div className="flex items-center gap-x-1">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
+                                <p className="text-black text-base max-md:text-sm">dll</p>
+                            </div>
+                        </div>
+                        <Link href="/paket2" className="px-3 py-2 bg-[#EAC100] rounded-lg text-white w-fit">
+                            Detail Paket
+                        </Link>
+                    </div>
+                </CardBody>
+            </Card>
         </div>
     )
 }
