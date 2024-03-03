@@ -89,7 +89,7 @@ export default function AppBar() {
                             key="umrohpromo"
                             className="text-black"
                         >
-                            <Link href="/">Umroh Promo</Link>
+                            <Link href="/paket3">Umroh Promo</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohsuperpromo"
@@ -201,7 +201,7 @@ export default function AppBar() {
                             key="umrohpromo"
                             className="text-black"
                         >
-                            <Link href="/" onClick={() => toggleMenu()}>Umroh Promo</Link>
+                            <Link href="/paket3" onClick={() => toggleMenu()}>Umroh Promo</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohpromo"
