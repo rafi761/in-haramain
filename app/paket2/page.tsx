@@ -17,7 +17,7 @@ const page = () => {
                                 className="object-cover"
                                 height={200}
                                 shadow="md"
-                                src="/images/umrohsuper.jpg"
+                                src="/images/umrohsuper.jpeg"
                                 width="100%"
                             />
                         </div>

@@ -177,7 +177,7 @@ const PacketContent = () => {
                     <Image
                         alt="Card background"
                         className="object-cover rounded-xl"
-                        src="/images/umrohturki.jpg"
+                        src="/images/umrohsuper.jpeg"
                         width={360}
                     />
                 </CardHeader>
