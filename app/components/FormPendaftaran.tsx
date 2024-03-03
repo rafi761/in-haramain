@@ -9,7 +9,7 @@ const FormPendaftaran = () => {
     return (
         <form method="POST" action="https://whatsapp-sender-oagaov4pgq-uc.a.run.app/" className="w-full flex flex-col gap-y-8">
             <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1">
-                <Input size="md" type="hidden" name="phoneNumber" value="6283838732975" className="hidden" />
+                <Input size="md" type="hidden" name="phoneNumber" value="6285292984909" className="hidden" />
                 <div className="flex items-end">
                     <Select
                         label="Program Keberangkatan"
