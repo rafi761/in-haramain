@@ -77,14 +77,14 @@ export default function AppBar() {
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="/paket1">Umroh Reguler 9 Hari</Link>
+                            <Link href="/paket1">Umroh Reguler</Link>
                         </DropdownItem>
-                        <DropdownItem
+                        {/* <DropdownItem
                             key="umrohreguler12hari"
                             className="text-black"
                         >
                             <Link href="/paket2">Umroh Reguler 12 Hari</Link>
-                        </DropdownItem>
+                        </DropdownItem> */}
                         <DropdownItem
                             key="umrohpromo"
                             className="text-black"
@@ -189,14 +189,14 @@ export default function AppBar() {
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="/paket1" onClick={() => toggleMenu()}>Umroh Reguler 9 Hari</Link>
+                            <Link href="/paket1" onClick={() => toggleMenu()}>Umroh Reguler</Link>
                         </DropdownItem>
-                        <DropdownItem
+                        {/* <DropdownItem
                             key="umrohreguler12hari"
                             className="text-black"
                         >
                             <Link href="/paket2" onClick={() => toggleMenu()}>Umroh Reguler 12 Hari</Link>
-                        </DropdownItem>
+                        </DropdownItem> */}
                         <DropdownItem
                             key="umrohpromo"
                             className="text-black"
