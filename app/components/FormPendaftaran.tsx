@@ -23,6 +23,12 @@ const FormPendaftaran = () => {
                         <SelectItem key="Reguler 12 Hari" value="Reguler 12 Hari" className="text-black">
                             Reguler 12 Hari
                         </SelectItem>
+                        <SelectItem key="Umroh Plus Turki 12 Hari" value="Umroh Plus Turki 12 Hari" className="text-black">
+                            Umroh Plus Turki 12 Hari
+                        </SelectItem>
+                        <SelectItem key="Umroh Super Promo 9 Hari" value="Umroh Super Promo 9 Hari" className="text-black">
+                            Umroh Super Promo 9 Hari
+                        </SelectItem>
                     </Select>
                 </div>
                 <div className="flex items-end">
