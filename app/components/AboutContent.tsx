@@ -15,7 +15,7 @@ const AboutContent = () => {
     }, [])
     return (
         <>
-            <div className="flex-1 flex flex-col gap-y-4 px-4" data-aos="fade-down-right">
+            <div className="flex-1 flex flex-col gap-y-4 px-4 lg:px-4" data-aos="fade-down-right">
                 <h3 className="text-base text-[#0B8457] font-semibold">TENTANG KAMI</h3>
                 <h1 className="text-4xl text-black max-md:text-2xl">IN-HARAMAIN TOUR : UMROH BERKUALITAS & NOMOR 1</h1>
                 <p className="text-base text-black">in-Haramain hadir dengan tujuan untuk menginspirasi, mempersiapkan, dan menyertai Anda dalam perjalanan Anda ke Tanah Suci. Kami memahami betapa pentingnya setiap langkah dalam perjalanan ke Baitullah, Masjid Nabawi, dan tempat-tempat suci lainnya. Oleh karena itu, kami berkomitmen untuk menyajikan informasi yang akurat, panduan praktis, dan layanan terbaik untuk memastikan pengalaman Anda berjalan lancar dan berkesan.</p>
