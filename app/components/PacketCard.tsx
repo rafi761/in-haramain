@@ -11,6 +11,7 @@ interface CardProps {
     dataAos: string,
     src: string,
     programDay: string,
+    programKeberangkatan?: string,
     title: string,
     price: string,
     include1: string,
@@ -22,7 +23,7 @@ interface CardProps {
     href: string
 }
 
-const PacketCard = ({ dataAos, src, programDay, title, price, include1, include2, include3, include4, include5, include6, href }: CardProps) => {
+const PacketCard = ({ dataAos, src, programDay, programKeberangkatan = 'Agustus - September 2024', title, price, include1, include2, include3, include4, include5, include6, href }: CardProps) => {
     useEffect(() => {
         AOS.init({
             duration: 800,
@@ -41,7 +42,7 @@ const PacketCard = ({ dataAos, src, programDay, title, price, include1, include2
             </CardHeader>
             <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{programDay}</p>
-                <small className="text-default-500">Agustus - September 2024</small>
+                <small className="text-default-500">{programKeberangkatan}</small>
                 <h4 className="font-bold text-large">{title} <span className="text-lg text-black font-normal">/ {price}</span></h4>
 
                 <div className="flex flex-col gap-y-4 mt-3">
