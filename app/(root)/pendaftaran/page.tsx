@@ -1,4 +1,4 @@
-import FormPendaftaran from "../components/FormPendaftaran"
+import FormPendaftaran from "@/app/components/FormPendaftaran"
 
 const page = () => {
     return (

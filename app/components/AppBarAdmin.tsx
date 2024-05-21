@@ -6,7 +6,7 @@ import { ChevronDown } from "./Icons";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function AppBar() {
+export default function AppBarAdmin() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [mobileMenu, setMobileMenu] = React.useState("Open Menu")
 
@@ -147,7 +147,7 @@ export default function AppBar() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="flex">
-                    <Link href="/signup" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Admin</Link>
+                    <Link href="" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Logout</Link>
                 </NavbarItem>
             </NavbarContent>
 
