@@ -11,7 +11,6 @@ export default function Home() {
       <Hero />
       <MainVideoContent />
       <About />
-      {/* @ts-expect-error Server Component */}
       <Packet />
     </main>
   );
