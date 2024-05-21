@@ -147,7 +147,7 @@ export default function AppBar() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem className="flex">
-                    <Link href="/signup" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Admin</Link>
+                    <Link href="/signin" className="px-3 py-2 rounded-2xl bg-[#EAC100] text-white text-sm sm:text-base sm:px-3 sm:py-2">Admin</Link>
                 </NavbarItem>
             </NavbarContent>
 
