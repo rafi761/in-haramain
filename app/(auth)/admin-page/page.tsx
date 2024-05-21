@@ -70,6 +70,32 @@ const AdminPage = async () => {
                 <SignOutButton />
             </div>
 
+            <div className="fixed w-full bottom-0 xl:hidden">
+                <div className="flex justify-between gap-y-5 p-4 bg-white rounded-xl">
+                    <div className="flex items-center gap-x-3">
+                        <CiViewList size={30} className="text-black" />
+                        <Link href="" className="text-sm text-black">
+                            Paket Haji / Umroh
+                        </Link>
+                    </div>
+                    <div className="flex items-center gap-x-3">
+                        <CiPillsBottle1 size={30} className="text-black" />
+                        <Link href="" className="text-sm text-black">
+                            Konten Artikel
+                        </Link>
+                    </div>
+                    <div className="flex items-center gap-x-3">
+                        <CiVideoOn size={30} className="text-black" />
+                        <Link href="" className="text-sm text-black">
+                            Konten Video
+                        </Link>
+                    </div>
+                    <div className="-mb-3">
+                        <SignOutButton />
+                    </div>
+                </div>
+            </div>
+
             <div className="flex-1 p-8 h-screen flex flex-col gap-y-8 max-md:overflow-x-scroll max-lg:max-w-full">
                 <div className="flex justify-between items-center">
                     <h2 className="text-xl text-black">Selamat Datang, Admin</h2>
