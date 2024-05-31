@@ -49,7 +49,7 @@ const FormAuthSignIn = () => {
     }
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-[576px] h-fit">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-[576px] max-md:w-full h-fit">
                 <FormField
                     control={form.control}
                     name="email"

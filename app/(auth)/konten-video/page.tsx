@@ -1,35 +1,25 @@
-import ModalButton from "@/app/components/ModalButton";
-import SignOutButton from "@/app/components/SignOutButton";
-import TableData from "@/app/components/Table";
-import { auth, db } from "@/lib/firebase/firebase";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { collection, getDocs } from "firebase/firestore";
+import ModalButtonVideo from "@/app/components/ModalButtonVideo"
+import SignOutButton from "@/app/components/SignOutButton"
+import VideoCard from "@/app/components/VideoCard"
+import { db } from "@/lib/firebase/firebase"
+import { collection, getDocs } from "firebase/firestore"
 import Image from "next/image"
-import Link from "next/link";
-import { redirect } from "next/navigation";
+import Link from "next/link"
+import { CiPillsBottle1, CiVideoOn, CiViewList } from "react-icons/ci"
 
-
-import { CiViewList, CiVideoOn, CiPillsBottle1 } from "react-icons/ci";
-
-interface Paket {
+interface Video {
     id: string;
-    harga: string;
-    periode_program: string;
-    judul_program: string;
-    durasi_program: string;
-    gambar: string;
-    list_benefit: string[]
+    judul_video: string;
+    video: string
 }
 
-const AdminPage = async () => {
-    const collectionRef = collection(db, "listpaket")
+const page = async () => {
+    const collectionRef = collection(db, "kontenvideo")
     const paketCollectionSnapshot = await getDocs(collectionRef)
-    const listPaket = paketCollectionSnapshot.docs.map(doc => ({
+    const kontenVideo = paketCollectionSnapshot.docs.map(doc => ({
         ...doc.data(),
         id: doc.id,
-    } as Paket));
-
-
+    } as Video));
     return (
         <div className="w-full min-h-screen bg-[#EEEDEB] flex">
             <div className="max-w-[300px] h-screen border-r-2 border-gray-400 px-6 py-4 flex flex-col justify-between max-xl:hidden">
@@ -98,16 +88,18 @@ const AdminPage = async () => {
 
             <div className="flex-1 p-8 h-screen flex flex-col gap-y-8 max-md:overflow-x-scroll max-lg:max-w-full">
                 <div className="flex justify-between items-center">
-                    <h2 className="text-xl text-black">Selamat Datang, Admin</h2>
-                    <ModalButton />
+                    <h2 className="text-xl text-black">Halaman Konten Video</h2>
+                    <ModalButtonVideo />
                 </div>
 
-                <div className="overflow-x-scroll">
-                    <TableData listPaketData={listPaket} />
+                <div className="flex flex-wrap gap-10 overflow-y-scroll ">
+                    {kontenVideo.map((video) => (
+                        <VideoCard key={video.id} id={video.id} judul_video={video.judul_video} video={video.video} />
+                    ))}
                 </div>
             </div>
         </div>
     )
 }
 
-export default AdminPage
+export default page

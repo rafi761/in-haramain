@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import MainVideoContent from "../components/MainVideoContent";
 import Packet from "../components/Packet";
 import Navbar from "../components/Navbar";
+import Artikel from "../components/Artikel";
+import Video from "../components/Video";
 
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <MainVideoContent />
       <About />
       <Packet />
+      <Artikel />
+      <Video />
     </main>
   );
 }

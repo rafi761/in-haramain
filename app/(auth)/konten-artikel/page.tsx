@@ -1,35 +1,27 @@
-import ModalButton from "@/app/components/ModalButton";
-import SignOutButton from "@/app/components/SignOutButton";
-import TableData from "@/app/components/Table";
-import { auth, db } from "@/lib/firebase/firebase";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { collection, getDocs } from "firebase/firestore";
+import ArtikelCard from "@/app/components/ArtikelCard"
+import ModalButton from "@/app/components/ModalButton"
+import ModalButtonArtikel from "@/app/components/ModalButtonArtikel"
+import SignOutButton from "@/app/components/SignOutButton"
+import { db } from "@/lib/firebase/firebase"
+import { collection, getDocs } from "firebase/firestore"
 import Image from "next/image"
-import Link from "next/link";
-import { redirect } from "next/navigation";
+import Link from "next/link"
+import { CiPillsBottle1, CiVideoOn, CiViewList } from "react-icons/ci"
 
-
-import { CiViewList, CiVideoOn, CiPillsBottle1 } from "react-icons/ci";
-
-interface Paket {
+interface Artikel {
     id: string;
-    harga: string;
-    periode_program: string;
-    judul_program: string;
-    durasi_program: string;
+    judul_artikel: string;
+    deskripsi: string;
     gambar: string;
-    list_benefit: string[]
 }
 
-const AdminPage = async () => {
-    const collectionRef = collection(db, "listpaket")
+const page = async () => {
+    const collectionRef = collection(db, "kontenartikel")
     const paketCollectionSnapshot = await getDocs(collectionRef)
-    const listPaket = paketCollectionSnapshot.docs.map(doc => ({
+    const kontenArtikel = paketCollectionSnapshot.docs.map(doc => ({
         ...doc.data(),
         id: doc.id,
-    } as Paket));
-
-
+    } as Artikel));
     return (
         <div className="w-full min-h-screen bg-[#EEEDEB] flex">
             <div className="max-w-[300px] h-screen border-r-2 border-gray-400 px-6 py-4 flex flex-col justify-between max-xl:hidden">
@@ -98,16 +90,18 @@ const AdminPage = async () => {
 
             <div className="flex-1 p-8 h-screen flex flex-col gap-y-8 max-md:overflow-x-scroll max-lg:max-w-full">
                 <div className="flex justify-between items-center">
-                    <h2 className="text-xl text-black">Selamat Datang, Admin</h2>
-                    <ModalButton />
+                    <h2 className="text-xl text-black">Halaman Konten Artikel</h2>
+                    <ModalButtonArtikel />
                 </div>
 
-                <div className="overflow-x-scroll">
-                    <TableData listPaketData={listPaket} />
+                <div className="flex flex-wrap gap-10 overflow-y-scroll">
+                    {kontenArtikel.map((konten) => (
+                        <ArtikelCard key={konten.id} id={konten.id} judul_artikel={konten.judul_artikel} deskripsi={konten.deskripsi} gambar={konten.gambar} />
+                    ))}
                 </div>
             </div>
         </div>
     )
 }
 
-export default AdminPage
+export default page
