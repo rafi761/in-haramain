@@ -10,6 +10,8 @@ interface Artikel {
     gambar: string;
 }
 
+export const revalidate = 0;
+
 const Artikel = async () => {
     const collectionRef = collection(db, "kontenartikel")
     const paketCollectionSnapshot = await getDocs(collectionRef)
