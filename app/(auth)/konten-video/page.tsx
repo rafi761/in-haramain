@@ -13,6 +13,8 @@ interface Video {
     video: string
 }
 
+export const revalidate = 0;
+
 const page = async () => {
     const collectionRef = collection(db, "kontenvideo")
     const paketCollectionSnapshot = await getDocs(collectionRef)

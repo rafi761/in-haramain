@@ -21,6 +21,8 @@ interface Paket {
     list_benefit: string[]
 }
 
+export const revalidate = 0;
+
 const AdminPage = async () => {
     const collectionRef = collection(db, "listpaket")
     const paketCollectionSnapshot = await getDocs(collectionRef)
