@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Artikel from "../components/Artikel";
 import Video from "../components/Video";
 
+export const revalidate = 0;
 
 export default function Home() {
   return (
