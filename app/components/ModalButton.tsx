@@ -10,12 +10,13 @@ import { useRef, useState } from "react";
 export default function ModalButton() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const [isLoading, setIsLoading] = useState(false)
+    const [kategori, setKategori] = useState("")
     const [durasi, setDurasi] = useState("")
     const [harga, setHarga] = useState("")
     const [judul, setJudul] = useState("")
     const [benefit, setBenefit] = useState("")
     const [periode, setPeriode] = useState("")
-    const [gambar, setGambar] = useState("")
+    const [deskripsi, setDeskripsi] = useState("")
 
     const inputRef = useRef<HTMLInputElement>(null)
 
@@ -38,6 +39,7 @@ export default function ModalButton() {
 
             const collectionRef = collection(db, 'listpaket');
             const docRef = await addDoc(collectionRef, {
+                kategori: kategori,
                 durasi_program: durasi,
                 gambar: url,
                 harga: harga,
@@ -46,13 +48,16 @@ export default function ModalButton() {
                     .split(',')
                     .map((benefit) => benefit.trim()),
                 periode_program: periode,
+                deskripsi: deskripsi
             })
 
+            setKategori("");
             setDurasi("");
             setHarga("");
             setJudul("");
             setBenefit("");
             setPeriode("");
+            setDeskripsi("")
             if (inputRef.current) {
                 inputRef.current.value = "";
             }
@@ -77,12 +82,14 @@ export default function ModalButton() {
                         <form onSubmit={(e) => handleSubmit(e, onClose)} className="w-full flex flex-col gap-y-3">
                             <ModalHeader className="flex flex-col gap-1 text-black">Tambah Data Paket Umroh / Haji</ModalHeader>
                             <ModalBody>
+                                <Input size="md" type="text" label="Kategori Program (REGULER / VIP / VVIP / PROMO / SUPER PROMO)" name="kategori_program" value={kategori} onChange={(e) => setKategori(e.target.value)} />
                                 <Input size="md" type="text" label="Durasi_Program" name="durasi_program" value={durasi} onChange={(e) => setDurasi(e.target.value)} />
                                 <input ref={inputRef} type="file" name="file" className="w-full bg-gray-100 rounded-xl p-2 text-gray-500" />
                                 <Input size="md" type="text" label="Harga" name="harga" value={harga} onChange={(e) => setHarga(e.target.value)} />
                                 <Input size="md" type="text" label="Judul_Program" name="judul_program" value={judul} onChange={(e) => setJudul(e.target.value)} />
                                 <Input size="md" type="text" label="List_Benefit" name="list_benefit" value={benefit} onChange={(e) => setBenefit(e.target.value)} />
                                 <Input size="md" type="text" label="Periode_Program" name="periode_program" value={periode} onChange={(e) => setPeriode(e.target.value)} />
+                                <Input size="md" type="text" label="Deskripsi_Program" name="deskripsi_program" value={deskripsi} onChange={(e) => setDeskripsi(e.target.value)} />
                             </ModalBody>
                             <ModalFooter className="flex items-center gap-x-2">
                                 <Button color="danger" variant="light" onPress={onClose}>

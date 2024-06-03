@@ -65,19 +65,19 @@ export default function AppBar() {
                             key="umrohvvip"
                             className="text-black"
                         >
-                            <Link href="/">Umroh VVIP</Link>
+                            <Link href="/paketvvip">Umroh VVIP</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohvip"
                             className="text-black"
                         >
-                            <Link href="/">Umroh VIP</Link>
+                            <Link href="/paketvip">Umroh VIP</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="/paket1">Umroh Reguler</Link>
+                            <Link href="/paketreguler">Umroh Reguler</Link>
                         </DropdownItem>
                         {/* <DropdownItem
                             key="umrohreguler12hari"
@@ -89,13 +89,13 @@ export default function AppBar() {
                             key="umrohpromo"
                             className="text-black"
                         >
-                            <Link href="/paket3">Umroh Promo</Link>
+                            <Link href="/paketpromo">Umroh Promo</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohsuperpromo"
                             className="text-black"
                         >
-                            <Link href="/paket2">Umroh Super Promo</Link>
+                            <Link href="/paketsuperpromo">Umroh Super Promo</Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
@@ -129,13 +129,17 @@ export default function AppBar() {
                             key="artikel"
                             className="text-black"
                         >
-                            ARTIKEL
+                            <Link href="/artikel">
+                                ARTIKEL
+                            </Link>
                         </DropdownItem>
                         <DropdownItem
                             key="video"
                             className="text-black"
                         >
-                            VIDEO
+                            <Link href="/video">
+                                VIDEO
+                            </Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
@@ -183,13 +187,13 @@ export default function AppBar() {
                             key="umrohvip"
                             className="text-black"
                         >
-                            <Link href="/" onClick={() => toggleMenu()}>Umroh VIP</Link>
+                            <Link href="/paketvip" onClick={() => toggleMenu()}>Umroh VIP</Link>
                         </DropdownItem>
                         <DropdownItem
                             key="umrohreguler9hari"
                             className="text-black"
                         >
-                            <Link href="/paket1" onClick={() => toggleMenu()}>Umroh Reguler</Link>
+                            <Link href="/paketreguler" onClick={() => toggleMenu()}>Umroh Reguler</Link>
                         </DropdownItem>
                         {/* <DropdownItem
                             key="umrohreguler12hari"
@@ -241,13 +245,17 @@ export default function AppBar() {
                             key="artikel"
                             className="text-black"
                         >
-                            ARTIKEL
+                            <Link href="/artikel">
+                                ARTIKEL
+                            </Link>
                         </DropdownItem>
                         <DropdownItem
                             key="video"
                             className="text-black"
                         >
-                            VIDEO
+                            <Link href="/video">
+                                VIDEO
+                            </Link>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
