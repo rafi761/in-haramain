@@ -8,6 +8,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import { AiOutlineDelete } from 'react-icons/ai'
+import { storage } from "@/lib/firebase/firebase";
+import { ref, getDownloadURL } from "firebase/storage";
 
 interface Artikel {
     id: string;
@@ -34,23 +36,41 @@ const ArtikelCard = ({ id, judul_artikel, deskripsi, gambar }: Artikel) => {
         await deleteDoc(docRef)
         router.refresh()
     }
+
+    const handleDownload = async () => {
+        try {
+            // Mendapatkan URL file dari Firebase Storage
+            const fileRef = ref(storage, gambar);
+            const url = await getDownloadURL(fileRef);
+
+            // Membuat elemen anchor untuk memulai unduhan otomatis
+            const link = document.createElement('a');
+            link.href = url;
+            // Menetapkan nama file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error('Error saat mengunduh file:', error);
+        }
+    };
     return (
-        <div className='w-[300px] h-[350px] bg-gray-300 rounded-xl flex flex-col justify-between'>
-            <div className='relative w-full h-[180px] rounded-xl'>
+        <div className='w-[400px] h-[200px] bg-white rounded-xl flex flex-col justify-between'>
+            {/* <div className='relative w-full h-[180px] rounded-xl'>
                 <Image
                     src={gambar}
                     alt="img1"
                     fill
                     className="object-cover rounded-xl"
                 />
-            </div>
-            <h2 className='px-3 py-2  font-semibold'>{judul_artikel}</h2>
-            <p className='p-3'>{truncatedText}</p>
+            </div> */}
+            <h2 className='px-3 py-2 text-black font-semibold'>{judul_artikel}</h2>
+            <p className='p-3 text-black'>{truncatedText}</p>
             <div className='flex justify-between p-3'>
-                <AiOutlineDelete size={20} onClick={() => deletePaket(id)} className="cursor-pointer" />
-                <Link href="" className="text-xs underline">
-                    Read More..
-                </Link>
+                <AiOutlineDelete size={20} onClick={() => deletePaket(id)} className="cursor-pointer text-black" />
+                <button onClick={handleDownload} className="text-black">
+                    Unduh Artikel
+                </button>
             </div>
         </div>
     )

@@ -44,11 +44,11 @@ const PacketCard = ({ dataAos, gambar, durasi_program, judul_program, periode_pr
 
                 <div className="flex flex-col gap-y-4 mt-3">
                     <h3>Harga Sudah Termasuk :</h3>
-                    <div className="grid grid-cols-2">
+                    <div className="grid grid-cols-2 gap-y-2">
                         {list_benefits.map(item => (
-                            <div key={keyForMap++} className="flex items-center gap-x-1">
-                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7" />
-                                <p className="text-black text-base max-md:text-sm">{item}</p>
+                            <div key={keyForMap++} className="flex items-center gap-x-1 py-1">
+                                <IoIosCheckmarkCircleOutline size={35} className="text-[#0B8457] max-sm:w-7 h-7 flex-shrink-0" />
+                                <p className="text-black text-base max-md:text-sm flex-shrink-1">{item}</p>
                             </div>
                         ))}
                     </div>

@@ -1,4 +1,5 @@
 import ArtikelCard from "@/app/components/ArtikelCard"
+import MainArtikelCard from "@/app/components/MainArtikelCard"
 import ModalButton from "@/app/components/ModalButton"
 import ModalButtonArtikel from "@/app/components/ModalButtonArtikel"
 import SignOutButton from "@/app/components/SignOutButton"
@@ -28,7 +29,7 @@ const page = async () => {
         <div className="w-full min-h-screen bg-[#EEEDEB] flex">
             <div className="flex flex-wrap gap-10 overflow-y-scroll p-10">
                 {kontenArtikel.map((konten) => (
-                    <ArtikelCard key={konten.id} id={konten.id} judul_artikel={konten.judul_artikel} deskripsi={konten.deskripsi} gambar={konten.gambar} />
+                    <MainArtikelCard key={konten.id} id={konten.id} judul_artikel={konten.judul_artikel} deskripsi={konten.deskripsi} gambar={konten.gambar} />
                 ))}
             </div>
         </div>

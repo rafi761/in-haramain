@@ -1,3 +1,4 @@
+import MainVideoCard from "@/app/components/MainVideoCard"
 import ModalButtonVideo from "@/app/components/ModalButtonVideo"
 import SignOutButton from "@/app/components/SignOutButton"
 import VideoCard from "@/app/components/VideoCard"
@@ -26,7 +27,7 @@ const page = async () => {
         <div className="w-full min-h-screen bg-[#EEEDEB] flex ">
             <div className="flex flex-wrap gap-10 overflow-y-scroll p-10">
                 {kontenVideo.map((video) => (
-                    <VideoCard key={video.id} id={video.id} judul_video={video.judul_video} video={video.video} />
+                    <MainVideoCard key={video.id} id={video.id} judul_video={video.judul_video} video={video.video} />
                 ))}
             </div>
         </div>
