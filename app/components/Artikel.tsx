@@ -6,6 +6,7 @@ import MainArtikelCard from "./MainArtikelCard";
 interface Artikel {
     id: string;
     judul_artikel: string;
+    link: string;
     deskripsi: string;
     gambar: string;
 }
@@ -27,7 +28,7 @@ const Artikel = async () => {
 
                     <div className="grid grid-cols-1 gap-x-12 md:grid-cols-2 xl:grid-cols-3 gap-y-8 max-md:justify-items-center">
                         {kontenArtikel.map(item => (
-                            <MainArtikelCard key={item.id} id={item.id} judul_artikel={item.judul_artikel} deskripsi={item.deskripsi} gambar={item.gambar} />
+                            <MainArtikelCard key={item.id} id={item.id} judul_artikel={item.judul_artikel} link={item.link} deskripsi={item.deskripsi} gambar={item.gambar} />
                         ))}
                     </div>
                 </section>

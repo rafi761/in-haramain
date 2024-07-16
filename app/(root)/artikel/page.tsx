@@ -12,6 +12,7 @@ import { CiPillsBottle1, CiVideoOn, CiViewList } from "react-icons/ci"
 interface Artikel {
     id: string;
     judul_artikel: string;
+    link: string;
     deskripsi: string;
     gambar: string;
 }
@@ -29,7 +30,7 @@ const page = async () => {
         <div className="w-full min-h-screen bg-[#EEEDEB] flex">
             <div className="flex flex-wrap gap-10 overflow-y-scroll p-10">
                 {kontenArtikel.map((konten) => (
-                    <MainArtikelCard key={konten.id} id={konten.id} judul_artikel={konten.judul_artikel} deskripsi={konten.deskripsi} gambar={konten.gambar} />
+                    <MainArtikelCard key={konten.id} id={konten.id} judul_artikel={konten.judul_artikel} link={konten.link} deskripsi={konten.deskripsi} gambar={konten.gambar} />
                 ))}
             </div>
         </div>

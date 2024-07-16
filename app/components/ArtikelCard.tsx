@@ -14,11 +14,12 @@ import { ref, getDownloadURL } from "firebase/storage";
 interface Artikel {
     id: string;
     judul_artikel: string;
+    link: string;
     deskripsi: string;
     gambar: string;
 }
 
-const ArtikelCard = ({ id, judul_artikel, deskripsi, gambar }: Artikel) => {
+const ArtikelCard = ({ id, judul_artikel, deskripsi, gambar, link }: Artikel) => {
     const [truncatedText, setTruncatedText] = useState(deskripsi);
 
     const router = useRouter()
@@ -37,40 +38,23 @@ const ArtikelCard = ({ id, judul_artikel, deskripsi, gambar }: Artikel) => {
         router.refresh()
     }
 
-    const handleDownload = async () => {
-        try {
-            // Mendapatkan URL file dari Firebase Storage
-            const fileRef = ref(storage, gambar);
-            const url = await getDownloadURL(fileRef);
-
-            // Membuat elemen anchor untuk memulai unduhan otomatis
-            const link = document.createElement('a');
-            link.href = url;
-            // Menetapkan nama file
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } catch (error) {
-            console.error('Error saat mengunduh file:', error);
-        }
-    };
     return (
         <div className='w-[400px] h-[200px] bg-white rounded-xl flex flex-col justify-between'>
-            {/* <div className='relative w-full h-[180px] rounded-xl'>
+            <div className='relative w-full h-[180px] rounded-xl'>
                 <Image
                     src={gambar}
                     alt="img1"
                     fill
                     className="object-cover rounded-xl"
                 />
-            </div> */}
+            </div>
             <h2 className='px-3 py-2 text-black font-semibold'>{judul_artikel}</h2>
             <p className='p-3 text-black'>{truncatedText}</p>
             <div className='flex justify-between p-3'>
                 <AiOutlineDelete size={20} onClick={() => deletePaket(id)} className="cursor-pointer text-black" />
-                <button onClick={handleDownload} className="text-black">
-                    Unduh Artikel
-                </button>
+                <a href={link} target="_blank" className='text-sx'>
+                    See more..
+                </a>
             </div>
         </div>
     )
